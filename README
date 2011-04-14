@@ -1,0 +1,3 @@
+you can run setup.sh to actually add all the git submodules and junk after you do a clone
+and then you need to symlink the dir to ~/.vim
+and the vimrc file inside to ~/.vimrc
