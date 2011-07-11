@@ -138,3 +138,12 @@ autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
 set guifont=Inconsolata:h13
 set background=light
 
+function! s:DiffWithSaved()
+  let filetype=&ft
+  diffthis
+  vnew | r # | normal! 1Gdd
+  diffthis
+  exe "setlocal bt=nofile bh=wipe nobl noswf ro ft=" . filetype
+endfunction
+com! DiffSaved call s:DiffWithSaved()
+
