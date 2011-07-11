@@ -33,9 +33,6 @@ set autoindent
 set nosmartindent
 set nowrap
 
-" default window size
-set columns=80
-
 " tabstops
 set tabstop=4           " Number of spaces <tab> counts for.
 set softtabstop=4       " Backspace will erase the same number of spaces as shiftwidth
@@ -78,7 +75,7 @@ set ttyfast             " We have a fast terminal connection.
 set encoding=utf-8      " Set default encoding to UTF-8.
 set nostartofline       " Do not jump to first character with page commands
 set laststatus=2        " statusline on second last line
-
+set colorcolumn=80      " highlight the 80th column
 
 
 " double j to enter command mode
