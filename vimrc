@@ -75,6 +75,7 @@ set ttyfast             " We have a fast terminal connection.
 set encoding=utf-8      " Set default encoding to UTF-8.
 set nostartofline       " Do not jump to first character with page commands
 set laststatus=2        " statusline on second last line
+set number              " enable line numbers
 set colorcolumn=80      " highlight the 80th column
 
 
