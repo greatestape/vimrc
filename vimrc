@@ -134,3 +134,7 @@ nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 
 " clean up trailing white space on save
 autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
+
+set guifont=Inconsolata:h13
+set background=light
+
