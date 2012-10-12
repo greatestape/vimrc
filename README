@@ -1,3 +1,15 @@
-you can run setup.sh to actually add all the git submodules and junk after you do a clone
-and then you need to symlink the dir to ~/.vim
-and the vimrc file inside to ~/.vimrc
+To install:
+
+ - symlink the directory to ~/.vim
+ - symlink the vimrc file within this directory to ~/.vimrc
+ - run the script setup.sh, which will set up the submodules
+   and command-t.
+
+To update the submodules yourself:
+
+ - git submodule foreach git pull origin master
+
+You can learn more about managing your .vim files using git
+by reading this article:
+
+- http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
