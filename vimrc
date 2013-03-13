@@ -122,6 +122,7 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 
 " open nerdtree
 nmap <leader>n :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$']
 
 " auto source vimrc when saved
 autocmd BufWritePost .vimrc source $MYVIMRC
