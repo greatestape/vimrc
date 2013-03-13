@@ -10,7 +10,7 @@ set nocompatible
 call pathogen#infect()
 
 " gui font
-set guifont=Consolas:h12
+set guifont=Source\ Code\ Pro:h13
 
 " Enable syntax-highlighting.
 syntax on
@@ -151,7 +151,6 @@ nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 " clean up trailing white space on save
 autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
 
-set guifont=Inconsolata:h13
 set background=light
 
 function! s:DiffWithSaved()
