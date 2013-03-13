@@ -7,8 +7,7 @@
 set nocompatible
 
 " run pathogen to manage our plugins, all installed inside vim/bundles
-call pathogen#helptags()
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 
 " gui font
 set guifont=Consolas:h12
