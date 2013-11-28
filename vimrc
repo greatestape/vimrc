@@ -1,6 +1,6 @@
 "------------------------------------------------------------------------------
 " File: $HOME/.vimrc
-" Author: Ramanan Sivaranjan
+" Author: Ramanan Sivaranjan, Sam Bull
 "------------------------------------------------------------------------------
 
 " to run will work with no weird side effects.
