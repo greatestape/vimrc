@@ -10,7 +10,11 @@ set nocompatible
 call pathogen#infect()
 
 " gui font
-set guifont=Source\ Code\ Pro\ Medium\ 8
+if has('mac')
+    set guifont=Source\ Code\ Pro:h10
+elseif has('unix')
+    set guifont=Source\ Code\ Pro\ Medium\ 8
+endif
 
 " Enable syntax-highlighting.
 syntax enable
