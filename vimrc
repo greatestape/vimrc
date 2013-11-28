@@ -10,12 +10,12 @@ set nocompatible
 call pathogen#infect()
 
 " gui font
-set guifont=Source\ Code\ Pro:h13
+set guifont=Source\ Code\ Pro\ Medium\ 8
 
 " Enable syntax-highlighting.
-syntax on
+syntax enable
+set background=light
 colorscheme solarized
-set bg=light
 
 " don't complain about unsaved buffers
 set hidden
@@ -150,7 +150,7 @@ endfunction
 nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 
 " clean up trailing white space on save
-autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
+" autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
 
 set background=light
 
@@ -170,3 +170,14 @@ endif
 
 " Play nice with crontab files
 au BufEnter /tmp/crontab.* setl backupcopy=yes
+
+let g:syntastic_python_flake8_args="--max-line-length=120"
+let g:syntastic_python_checker_args="--max-line-length=120"
+let g:syntastic_python_checkers=["flake8"]
+
+" ctrl-p
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'rc'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc     " Linux/MacOSX
+let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
