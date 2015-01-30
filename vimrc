@@ -18,7 +18,12 @@ endif
 
 " Enable syntax-highlighting.
 syntax enable
-set background=light
+if !has("gui_running")
+    let g:solarized_termtrans=1
+    set background=dark
+else
+    set background=light
+endif
 colorscheme solarized
 
 " don't complain about unsaved buffers
@@ -155,8 +160,6 @@ nmap <leader>$ :call Preserve("%s/\\s\\+$//e")<CR>
 
 " clean up trailing white space on save
 " autocmd BufWritePre * :call Preserve("%s/\\s\\+$//e")
-
-set background=light
 
 function! s:DiffWithSaved()
   let filetype=&ft
