@@ -28,9 +28,15 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/dwm"]
-	path = bundle/dwm
-	url = https://github.com/spolu/dwm.vim
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/nose.vim"]
+	path = bundle/nose.vim
+	url = https://github.com/lambdalisue/nose.vim
+[submodule "bundle/vim-python-pep8-indent"]
+	path = bundle/vim-python-pep8-indent
+	url = https://github.com/hynek/vim-python-pep8-indent
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim
