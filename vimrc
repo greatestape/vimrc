@@ -188,3 +188,7 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'rc'
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc     " Linux/MacOSX
 let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
+
+" Fix python indent
+let g:pymode_indent = 0
+
