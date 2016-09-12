@@ -16,6 +16,9 @@ elseif has('unix')
     set guifont=Source\ Code\ Pro\ Medium\ 8
 endif
 
+" Fix tty mouse wrap-around
+set ttymouse=sgr
+
 " Enable syntax-highlighting.
 syntax enable
 if !has("gui_running")
