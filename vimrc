@@ -23,7 +23,7 @@ set ttymouse=sgr
 syntax enable
 if !has("gui_running")
     let g:solarized_termtrans=1
-    set background=dark
+    set background=light
 else
     set background=light
 endif
