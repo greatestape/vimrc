@@ -7,9 +7,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/sparkup"]
-	path = bundle/sparkup
-	url = http://github.com/bingaman/vim-sparkup.git
 [submodule "bundle/vim-commentary"]
 	path = bundle/vim-commentary
 	url = git://github.com/tpope/vim-commentary.git
@@ -19,9 +16,6 @@
 [submodule "bundle/align"]
 	path = bundle/align
 	url = https://github.com/tsaleh/vim-align
-[submodule "tabular"]
-	path = bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
 [submodule "bundle/puppet"]
 	path = bundle/puppet
 	url = https://github.com/rodjek/vim-puppet.git
