@@ -174,7 +174,21 @@ endfunction
 com! DiffSaved call s:DiffWithSaved()
 
 if has("statusline")
- set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+ set statusline=%< " Truncation marker
+ set statusline+=%f " Filename
+ set statusline+=\  " Whitespace
+ set statusline+=%h " Help buffer flag
+ set statusline+=%m " Modified flag
+ set statusline+=%r " Read-only flag
+ set statusline+=%= " Switch to right-align
+ set statusline+=%{fugitive#statusline()}  " VCS status line
+ set statusline+=\  " Whitespace
+ set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"} " Encoding and BOM info
+ set statusline+=%k " Dunno what this does.
+ set statusline+=\  " Whitespace
+ set statusline+=%-14.(%l,%c%V%) " line num, col num and virtual col num
+ set statusline+=\  " Whitespace
+ set statusline+=%P " Percentage through file
 endif
 
 
