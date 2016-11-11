@@ -7,7 +7,7 @@
 set nocompatible
 
 " run pathogen to manage our plugins, all installed inside vim/bundles
-call pathogen#infect()
+execute pathogen#infect()
 
 " gui font
 if has('mac')
