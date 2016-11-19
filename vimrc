@@ -181,7 +181,6 @@ if has("statusline")
  set statusline+=%m " Modified flag
  set statusline+=%r " Read-only flag
  set statusline+=%= " Switch to right-align
- set statusline+=%{fugitive#statusline()}  " VCS status line
  set statusline+=\  " Whitespace
  set statusline+=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"} " Encoding and BOM info
  set statusline+=%k " Dunno what this does.
