@@ -37,3 +37,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "bundle/python-syntax"]
+	path = bundle/python-syntax
+	url = git@github.com:vim-python/python-syntax.git
