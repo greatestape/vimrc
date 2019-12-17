@@ -6,8 +6,14 @@
 " to run will work with no weird side effects.
 set nocompatible
 
-" run pathogen to manage our plugins, all installed inside vim/bundles
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-commentary'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
+call plug#end()
+
 
 " gui font
 if has('mac')
@@ -198,16 +204,10 @@ let g:syntastic_python_flake8_args="--max-line-length=120"
 let g:syntastic_python_checker_args="--max-line-length=120"
 let g:syntastic_python_checkers=["flake8"]
 
-" ctrl-p
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'rc'
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc     " Linux/MacOSX
-let g:ctrlp_custom_ignore = '\v[\/](\.git|\.hg|\.svn)$'
-
 " ctags
 set tags=./tags;
 
 " Fix python indent
 let g:pymode_indent = 0
 
+nnoremap <silent> <c-p> :Files<CR>
