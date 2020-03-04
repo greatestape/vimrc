@@ -20,6 +20,7 @@ Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'janko/vim-test'
 Plug 'dense-analysis/ale'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 
